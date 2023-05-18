@@ -13,4 +13,4 @@ ___
 - Scripts without these prefixes will be listed with `type="server"`.
 ___
 ### NOTE:
-- It only changes scripts (.lua) and files, that is, it does not change other attributes like `oop`, `min_mta_version`, etc.
+- It only changes `<script \>` and `<file \>`, that is, it does not change other attributes like `oop`, `min_mta_version`, etc.
