@@ -4,7 +4,7 @@
 	"publisher": "idz-brenodanyel",
 	"description": "sync meta.xml files with directory files and scripts",
 	"repository": "https://github.com/brenodanyel/mta-vscode-meta-sync",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.78.0"
 	},
