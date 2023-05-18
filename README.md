@@ -14,3 +14,7 @@ ___
 ___
 ### NOTE:
 - It only changes `<script \>` and `<file \>`, that is, it does not change other attributes like `oop`, `min_mta_version`, etc.
+___
+
+### GIF:
+![ezgif com-video-to-gif](https://github.com/brenodanyel/mta-vscode-meta-sync/assets/89032856/2c9ee213-8b6e-4cd9-ace0-2f4b0c68b8cf)
