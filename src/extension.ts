@@ -69,7 +69,7 @@ export function activate(context: vscode.ExtensionContext) {
           if (folder) folder += '/';
 
           const row = {
-            file: folder + file,
+            src: folder + file,
           } as any;
 
           if (file.startsWith('c.')) {
@@ -91,7 +91,7 @@ export function activate(context: vscode.ExtensionContext) {
 
           output.meta.file.push({
             $: {
-              file: folder + file,
+              src: folder + file,
             },
           });
         }
