@@ -1,58 +1,70 @@
 {
-  "name": "idz-mta-sync-meta",
-  "displayName": "mta-sync-meta",
-  "description": "sync meta.xml files with directory files and scripts",
-  "repository": "https://github.com/brenodanyel/mta-vscode-meta-sync",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.78.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.syncMetaXML",
-        "title": "Synchronize meta.xml"
-      }
-    ],
-    "menus": {
-      "explorer/context": [
-        {
-          "command": "extension.syncMetaXML",
-          "group": "navigation",
-          "when": "resourceLangId == xml && resourceFilename =~ /meta\\.xml$/",
-          "title": "Synchronize meta.xml"
-        }
-      ]
-    }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/glob": "^8.1.0",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "16.x",
-    "@types/vscode": "^1.78.0",
-    "@types/xml2js": "^0.4.11",
-    "@typescript-eslint/eslint-plugin": "^5.59.1",
-    "@typescript-eslint/parser": "^5.59.1",
-    "@vscode/test-electron": "^2.3.0",
-    "eslint": "^8.39.0",
-    "glob": "^8.1.0",
-    "mocha": "^10.2.0",
-    "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "xml2js": "^0.5.0"
-  }
+	"name": "idz-mta-sync-meta",
+	"displayName": "mta-sync-meta",
+	"publisher": "idz-brenodanyel",
+	"description": "sync meta.xml files with directory files and scripts",
+	"repository": "https://github.com/brenodanyel/mta-vscode-meta-sync",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.78.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.syncMetaXML",
+				"title": "Synchronize meta.xml"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.syncMetaXML",
+					"group": "navigation",
+					"when": "resourceLangId == xml && resourceFilename =~ /meta\\.xml$/",
+					"title": "Synchronize meta.xml"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.78.0",
+		"@types/xml2js": "^0.4.11",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"@vscode/test-electron": "^2.3.0",
+		"eslint": "^8.39.0",
+		"glob": "^8.1.0",
+		"mocha": "^10.2.0",
+		"typescript": "^5.0.4"
+	},
+	"dependencies": {
+		"xml2js": "^0.5.0"
+	},
+	"__metadata": {
+		"id": "affe4a7d-7837-4f36-8f2a-88f5e238b36a",
+		"publisherId": "e8c121ee-1b53-4513-a21a-9f81ddb4b882",
+		"publisherDisplayName": "idz-brenodanyel",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1684381696709,
+		"preRelease": false
+	}
 }

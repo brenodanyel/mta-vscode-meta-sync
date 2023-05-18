@@ -32,6 +32,10 @@ export function activate(context: vscode.ExtensionContext) {
 
         const output = { ...result };
 
+        if (typeof output.meta !== 'object') {
+          output.meta = {};
+        }
+
         // clear current script nodes
         output.meta.script = [];
 
@@ -95,7 +99,11 @@ export function activate(context: vscode.ExtensionContext) {
 
         verifyPath(folderPath);
 
-        const builder = new xml2js.Builder({ headless: true });
+        const builder = new xml2js.Builder({
+          headless: true,
+          renderOpts: { pretty: true },
+        });
+
         const updatedMetaXMLContent = builder.buildObject(output);
 
         fs.writeFileSync(metaXMLFilePath, updatedMetaXMLContent);
