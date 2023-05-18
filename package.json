@@ -4,7 +4,7 @@
 	"publisher": "idz-brenodanyel",
 	"description": "sync meta.xml files with directory files and scripts",
 	"repository": "https://github.com/brenodanyel/mta-vscode-meta-sync",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.78.0"
 	},
@@ -37,6 +37,7 @@
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile && npm run lint",
 		"lint": "eslint src --ext ts",
+		"deploy": "npx vsce package",
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {

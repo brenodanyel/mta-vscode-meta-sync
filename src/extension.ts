@@ -66,7 +66,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         function handleLuaScript(filepath: string, file: string) {
           let folder = path.relative(folderPath, filepath).replace(/\\/g, '/');
-          if (folder) folder = folder + '/';
+          if (folder) folder += '/';
 
           const row = {
             file: folder + file,
@@ -87,12 +87,11 @@ export function activate(context: vscode.ExtensionContext) {
 
         function handleFile(filepath: string, file: string) {
           let folder = path.relative(folderPath, filepath).replace(/\\/g, '/');
-          if (folder) folder = folder + '/';
+          if (folder) folder += '/';
 
           output.meta.file.push({
             $: {
               file: folder + file,
-              cache: 'false',
             },
           });
         }
