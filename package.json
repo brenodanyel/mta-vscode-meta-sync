@@ -1,7 +1,8 @@
 {
-  "name": "mta-sync-meta",
+  "name": "idz-mta-sync-meta",
   "displayName": "mta-sync-meta",
-  "description": "sync meta.xml files with current directory files",
+  "description": "sync meta.xml files with directory files and scripts",
+  "repository": "https://github.com/brenodanyel/mta-vscode-meta-sync",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.78.0"
